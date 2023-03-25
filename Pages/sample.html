@@ -8,13 +8,12 @@
         body {
             background-image: url(/images/banner2.jpg);
             width: 100%;
-            height: 100vh;
+            height: 120%;
             background-position: center;
             background-size: cover;
         }
 
         header {
-            position: fixed;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -24,8 +23,9 @@
 
         .logo img {
             height: 50px;
-            width: 50px;
+            margin-left: 20px;
         }
+
         nav ul {
             display: flex;
             list-style: none;
@@ -37,16 +37,19 @@
             margin-left: 20px;
         }
 
+        nav li:first-child {
+            margin-left: 0;
+        }
+
         nav a {
             color: #fff;
             text-decoration: none;
-            
 
         }
 
         .heading {
             margin-top: 30px;
-            margin-left: 58px;
+            margin-left: 80px;
             margin-bottom: 20px;
             font-weight: bold;
             color: #d4cfeb;
@@ -67,15 +70,20 @@
             margin-top: 50px;
             border-radius: 30px;
         }
-
+        #generate-button:hover{
+            background-color: #dd5c5c;
+            height: 60px;
+            width: 280px;
+            font-size: large;
+        } 
         #generate-button {
             height: 50px;
-            width: 200px;
+            width: 250px;
             display: block;
             margin: 0 auto;
             margin-top: 50px;
             padding: 10px 20px;
-            background-color: #4CAF50;
+            background-color: #a0529d;
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -98,42 +106,47 @@
         }
 
         /*----js----------*/
-        .path {
-            margin-top: 100px;
+    .path {
+
             margin-bottom: 0%;
             height: 60px;
             display: flex;
-            flex-direction: row;
-            justify-content: center;
+           
         }
         #image-path {
             height: 40px;
-            width: 500px;
+            width: 700px;
             padding: 12px 20px;
             box-sizing: border-box;
             border: 2px solid #ccc;
             border-radius: 5px;
             background-color: #f8f8f8;
             font-size: 16px;
+            margin-left: 400px;
+            margin-top: 80px;
         }
         .copy-btn {
             background-color: white;
             border: none;
             cursor: pointer;
             border-radius: 3px;
-            height: 40px;
+            height: 30px;
             width: 40px;
-            padding: 3px;
+            padding: 6px;
+            margin-left:5px;
+            margin-top: 80px;
         }
      
     </style>
 </head>
 
 <body>
+    <div class="background">
         <!--header section-->
         <header>
-                <img src="/images/icon.png" alt="Icon" class="logo"/>
-
+            <div class="logo">
+                <a href="/index.html"><img src="/images/icon.png" alt="Icon" />
+            </div>
             <nav>
                 <ul>
                     <li><a href="/index.html" class="ul">Home</a></li>
@@ -149,13 +162,14 @@
             <img id="random-image" src="">
         </div>
         <div class="button-container">
-            <button id="generate-button">Generate Image</button>
+            <button id="generate-button">Generate Random Image</button>
         </div>
 
 
         <div class="path">
             <input type="text" id="image-path" value="" readonly> &nbsp; &nbsp;
             <img src="/images/copy.png" class="copy-btn" id="copy-button" />
+        </div>
     </div>
 
 
