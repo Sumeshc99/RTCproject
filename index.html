@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Homepage</title>
+
+    <script>
+        function openOption(){
+            const selectElement = document.getElementById("option");
+            const selectOption = selectElement.value;
+            console.log(selectOption);     
+           }
+        
+    </script>
+
+</head>
+
+<body>
+    <div class="background">
+        <!--header section-->
+        <header>
+            <div class="logo">
+                <img src="icon.png" alt="Icon" />
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--title-->
+        <h1 class="heading">Image Search Platform</h1>
+
+
+        <div class="container">
+            <label>SELECT ONE CATEGORY : &nbsp;</label>
+            <select id="options">
+                <option value=""> -------</option>
+                <option value="space">space related search</option>
+                <option value="bandini">bandini</option>
+                <option value="teju">teju</option>
+                <option value="mahesh">mahesh</option>
+                <option value="sonali">sonali</option>
+                <option value="harsh">harsh</option>
+
+            </select>
+
+            <button onclick="openOption()">click</button>
+        </div>
+
+</body>
+
+</html>
