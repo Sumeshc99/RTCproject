@@ -54,12 +54,28 @@ nav a {
 
 .container {
   display: flex;
-  margin-left: 60px;
-  align-items: center;
-  height: 10vh;
+  flex-direction: row;
+  justify-content: center;
+  height: 50px;
 
 }
 
 label {
   color: white;
+  font-size: 30px;
+  border-radius: 7px;
+  margin-top: 50px;
+}
+#options{
+  height: 40px;
+  width: 300px;
+  border-radius: 7px;
+  margin-top: 50px;
+}
+.click{
+  margin-top: 50px;
+  width: 60px;
+  height: 40px;
+margin-left: 9px;
+border-radius: 7px;
 }
