@@ -60,22 +60,11 @@ nav a {
 
 }
 
-label {
-  color: white;
-  font-size: 30px;
-  border-radius: 7px;
-  margin-top: 50px;
-}
-#options{
-  height: 40px;
-  width: 300px;
-  border-radius: 7px;
-  margin-top: 50px;
-}
-.click{
-  margin-top: 50px;
-  width: 60px;
-  height: 40px;
-margin-left: 9px;
-border-radius: 7px;
-}
+/*
+.div-intro{
+  margin-top: 250px;
+  margin-left: 150px;
+  margin-right: 200px;
+  color: #f0e0e0;
+  font-size: 20px;
+}*/
